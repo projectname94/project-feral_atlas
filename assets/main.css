@@ -3,6 +3,8 @@ html, body{
 	margin: 0;
 	width: 100%;
 	overflow-x: hidden;
+	font-family: sans-serif;
+	font-weight: 400;
 }
 
 #container{
@@ -24,30 +26,63 @@ ul, li{
 
 }
 
-li.item{
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	background-color: red;
+.item{
+	position: fixed;
+	width: 10rem;
+	height: 10rem;
 }
 
-li.item a{
+.item a{
 	color: black;
 	text-decoration: none;
 }
 
-li.item h1, li.item h2{
+.item_text{
 	padding: 0;
 	margin: 0;
 }
 
-li.item aside{
+.item_title{
+	font-size: 2rem;
+}
+
+
+.item_image{
+	width: 100%;
+}
+
+.text_container{
+	position: absolute;
+	top: calc(100% + 1rem);
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
 	visibility: hidden;
 	opacity: 0;
+	width: auto;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.item_category{
+	margin-top: 2vw;
+	color: lightgray;
+}
+
+.invasion .invasion,
+.capital .capital{
+	color: black;
+}
+
+.categories{
+	width: 30rem;
+	display: flex;
+	font-size: 1rem;
+	justify-content: space-between;
 }
 
 @media(any-hover: hover){
-	li.item:hover aside{
+	.item:hover .text_container{
 		visibility: visible;
 		opacity: 1;
 	}

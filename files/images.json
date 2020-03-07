@@ -1,12 +1,32 @@
 [
 {
-	"title": "title",
-	"subtitle": "subtitle",
-	"url": "/feral",
-	"imagepath": "/files/",
-	"style": {
-		"left" : "2vw",
-		"top": "50vh"
-	}
+	"title": "African Swine Fever",
+	"category": "Capital",
+	"url": "feral",
+	"imagepath": "/files/images/african-swine-fever.png"
+},
+{
+  "title": "Trash",
+  "category": "Capital",
+  "url": "feral",
+  "imagepath": "/files/images/trash.png"
+},
+{ 
+  "title": "Undewater Noise",
+  "category": "Capital",
+  "url": "feral",
+  "imagepath": "/files/images/underwater-noise.png"
+},
+{
+  "title": "Water Hyacinth",
+  "category": "Capital",
+  "url": "feral",
+  "imagepath": "/files/images/water-hyacinth.png"
+},
+{
+  "title": "Witch Weed",
+  "category": "Capital",
+  "url": "feral",
+  "imagepath": "/files/images/witchweed.png"
 }
 ]
