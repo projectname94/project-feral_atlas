@@ -5,11 +5,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(10vw, -110vh);
   }
   100%{
     opacity: 0;
@@ -24,11 +22,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(30vw, -110vh);
   }
   100%{
     opacity: 0;
@@ -43,11 +39,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(60vw, -110vh);
   }
   100%{
     opacity: 0;
@@ -62,11 +56,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(10vw, -110vh);
   }
   100%{
     opacity: 0;
@@ -81,11 +73,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(-30vw, -110vh);
   }
   100%{
     opacity: 0;
@@ -100,11 +90,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(-60vw, -110vh);
   }
   100%{
     opacity: 0;
@@ -121,11 +109,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(10vw, 110vh);
   }
   100%{
     opacity: 0;
@@ -140,11 +126,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(30vw, 110vh);
   }
   100%{
     opacity: 0;
@@ -159,11 +143,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(60vw, 110vh);
   }
   100%{
     opacity: 0;
@@ -178,11 +160,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(10vw, 110vh);
   }
   100%{
     opacity: 0;
@@ -197,11 +177,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(-30vw, 110vh);
   }
   100%{
     opacity: 0;
@@ -216,11 +194,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(-60vw, 110vh);
   }
   100%{
     opacity: 0;
@@ -237,11 +213,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(110vw, 10vh);
   }
   100%{
     opacity: 0;
@@ -256,11 +230,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(110vw, 30vh);
   }
   100%{
     opacity: 0;
@@ -275,11 +247,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(110vw, 60vh);
   }
   100%{
     opacity: 0;
@@ -294,11 +264,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(110vw, 10vh);
   }
   100%{
     opacity: 0;
@@ -313,11 +281,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(110vw, -30vh);
   }
   100%{
     opacity: 0;
@@ -332,11 +298,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(110vw, -60vh);
   }
   100%{
     opacity: 0;
@@ -353,14 +317,12 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
-    opaci-ty: 1;
-    transform: translate(-110vw, 10vh);
+    opacity: 1;
   }
   100%{
-    opaci-ty: 0;
+    opacity: 0;
     transform: translate(-110vw, 10vh);
   }
 }
@@ -372,11 +334,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(-110vw, 30vh);
   }
   100%{
     opacity: 0;
@@ -391,11 +351,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(-110vw, 60vh);
   }
   100%{
     opacity: 0;
@@ -410,11 +368,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(-110vw, 10vh);
   }
   100%{
     opacity: 0;
@@ -429,11 +385,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(-110vw, -30vh);
   }
   100%{
     opacity: 0;
@@ -448,11 +402,9 @@
   }
   5%{
     opacity: 1;
-    transform: translate(0,0);
   }
   95%{
     opacity: 1;
-    transform: translate(-110vw, -60vh);
   }
   100%{
     opacity: 0;

@@ -55,7 +55,7 @@ Site.itemComponent = (item, index) => {
 	// item_image gets inline-styles for bobbing easing
 	// Lazy loading of images
 
-	return `<li class="item" id="item-${index}">
+	return `<li class="item left vertical1" style="animation: right3 infinite linear 10s;" id="item-${index}">
 		<a href="${item.url}">
 			<img loading="lazy" class="item_image" src="${item.imagepath}">
 			<aside class="text_container">
