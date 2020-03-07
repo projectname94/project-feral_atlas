@@ -1,0 +1,12 @@
+[
+{
+	"title": "title",
+	"subtitle": "subtitle",
+	"url": "/feral",
+	"imagepath": "/files/",
+	"style": {
+		"left" : "2vw",
+		"top": "50vh"
+	}
+}
+]
