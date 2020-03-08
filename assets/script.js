@@ -1,6 +1,6 @@
 var Site = {}
 Site.items = []
-Site.itemTracker = 15;
+Site.itemTracker = 30;
 document.addEventListener('DOMContentLoaded', init)
 
 
@@ -39,12 +39,31 @@ Site.arrayOrder = (array) => {
 
 Site.loadItem = (item, index, container) => {
 	container.insertAdjacentHTML('beforeend', Site.itemComponent(item, index))
+
+	var animated  = document.getElementById("item-" + index)
+	animated.addEventListener('animationend', () => {
+	  // console.log('Animation ended', e.target);
+	  // remove
+  	this.parentNode.removeChild(this);
+	  
+	  // track location in array
+	  Site.itemTracker++;
+	  
+	  if(Site.itemTracker > Site.items.length - 1){
+	  	Site.itemTracker = 0;
+	  	Site.arrayOrder(Site.items)
+	  }
+
+	  Site.loadItem(Site.items[Site.itemTracker], Site.itemTracker, container)
+	});
+
+
 }
 
 Site.loadingItems = (items, container) => {
 	// load in 15 initial items
 	items.forEach((item, index) => {	
-		if(index > 15){ return; }
+		if(index > 30){ return; }
 
 		Site.loadItem(item, index, container)
 	})
@@ -80,7 +99,7 @@ Site.itemComponent = (item, index) => {
 
 	return `<li 
 		class="item ${sideArray[side][0] + startPosition}" 
-		style="animation: ${sideArray[side][1] + leaning} cubic-bezier(0.25, 0.46, 0.45, 0.94) ${speed}s ${delay}s;" 
+		style="animation: ${sideArray[side][1] + leaning} linear ${speed}s ${delay}s;" 
 		id="item-${index}">
 		<a href="${item.url}">
 			<img 
