@@ -11,7 +11,7 @@
   }
   100%{
     opacity: 0;
-    transform: translate(10vw, -110vh);
+    transform: translate(10vw, 110vh);
   }
 }
 
@@ -28,7 +28,7 @@
   }
   100%{
     opacity: 0;
-    transform: translate(30vw, -110vh);
+    transform: translate(30vw, 110vh);
   }
 }
 
@@ -45,7 +45,7 @@
   }
   100%{
     opacity: 0;
-    transform: translate(60vw, -110vh);
+    transform: translate(60vw, 110vh);
   }
 }
 
@@ -62,7 +62,7 @@
   }
   100%{
     opacity: 0;
-    transform: translate(10vw, -110vh);
+    transform: translate(10vw, 110vh);
   }
 }
 
@@ -79,7 +79,7 @@
   }
   100%{
     opacity: 0;
-    transform: translate(-30vw, -110vh);
+    transform: translate(-30vw, 110vh);
   }
 }
 
@@ -96,7 +96,7 @@
   }
   100%{
     opacity: 0;
-    transform: translate(-60vw, -110vh);
+    transform: translate(-60vw, 110vh);
   }
 }
 
@@ -115,7 +115,7 @@
   }
   100%{
     opacity: 0;
-    transform: translate(10vw, 110vh);
+    transform: translate(10vw, -110vh);
   }
 }
 
@@ -132,7 +132,7 @@
   }
   100%{
     opacity: 0;
-    transform: translate(30vw, 110vh);
+    transform: translate(30vw, -110vh);
   }
 }
 
@@ -149,7 +149,7 @@
   }
   100%{
     opacity: 0;
-    transform: translate(60vw, 110vh);
+    transform: translate(60vw, -110vh);
   }
 }
 
@@ -166,7 +166,7 @@
   }
   100%{
     opacity: 0;
-    transform: translate(10vw, 110vh);
+    transform: translate(10vw, -110vh);
   }
 }
 
@@ -183,7 +183,7 @@
   }
   100%{
     opacity: 0;
-    transform: translate(-30vw, 110vh);
+    transform: translate(-30vw, -110vh);
   }
 }
 
@@ -200,7 +200,7 @@
   }
   100%{
     opacity: 0;
-    transform: translate(-60vw, 110vh);
+    transform: translate(-60vw, -110vh);
   }
 }
 
