@@ -1,4 +1,4 @@
-@keyframes bobbingY{
+@keyframes bobbing1{
 	0%{
 		transform: translateY(0, 0);
 	}
@@ -14,7 +14,7 @@
 }
 
 
-@keyframes bobbingxY{
+@keyframes bobbing2{
 	0%{
 		transform: translate(0, 0);
 	}
@@ -30,7 +30,7 @@
 }
 
 
-@keyframes bobbing-xY{
+@keyframes bobbing3{
 	0%{
 		transform: translate(0, 0);
 	}
@@ -43,56 +43,4 @@
 		transform: translate(0, 0);
 	}
 
-}
-
-
-@keyframes bobbingX{
-	0%{
-		transform: translate(0, 0);
-	}
-
-	15%{
-		transform: translate(0.5rem);
-	}
-
-	30%{
-		transform: translate(0, 0);
-	}
-}
-
-@keyframes bobbingXy{
-	0%{
-		transform: translate(0, 0);
-	}
-
-	15%{
-		transform: translate(0.5rem, 0.25rem);
-	}
-
-	30%{
-		transform: translate(0, 0);
-	}
-}
-
-@keyframes bobbingX-y{
-	0%{
-		transform: translate(0, 0);
-	}
-
-	15%{
-		transform: translate(0.5rem, -0.25rem);
-	}
-
-	30%{
-		transform: translate(0, 0);
-	}
-}
-
-
-.item img{
-	animation-name: bobbing-Y;
-	animation-duration: 15s; 
-	animation-iteration-count: infinite;
-	animation-timing-function: cubic-bezier(0, 0.1, 0.24, 0.99);
-	animation-delay: 2s;
 }
