@@ -37,14 +37,19 @@ Site.arrayOrder = (array) => {
 	return array;
 }	
 
-Site.loadItem = (item, index, container) => {
-	container.insertAdjacentHTML('beforeend', Site.itemComponent(item, index))
+Site.loadItem = (item, index, container, seek) => {
+	container.insertAdjacentHTML('beforeend', Site.itemComponent(item, index, seek))
 
 	var animated  = document.getElementById("item-" + index)
-	animated.addEventListener('animationend', () => {
+	animated.addEventListener('animationend', (e) => {
 	  // console.log('Animation ended', e.target);
 	  // remove
-  	this.parentNode.removeChild(this);
+	  if(e.animationName.includes("bobbing")){
+	  	return;
+	  }
+	  
+	  	e.target.parentNode.removeChild(e.target);
+	  
 	  
 	  // track location in array
 	  Site.itemTracker++;
@@ -65,11 +70,24 @@ Site.loadingItems = (items, container) => {
 	items.forEach((item, index) => {	
 		if(index > 30){ return; }
 
-		Site.loadItem(item, index, container)
+		if(index < 10){
+			// immediatly load into center
+			let seek = true;
+			Site.loadItem(item, index, container, seek)
+
+		}else if(index > 20){
+			// stagger loading in
+			setTimeout(() => {
+				Site.loadItem(item, index, container)
+			}, 7000)
+		}else{
+			Site.loadItem(item, index, container)
+		}
+
 	})
 }
 
-Site.itemComponent = (item, index) => {
+Site.itemComponent = (item, index, seek) => {
 	// list item gets one class for animation keyframes
 	// for all animations:
 	// 1-3 position positive translations
@@ -85,11 +103,17 @@ Site.itemComponent = (item, index) => {
 	// 2 possible animations per side and direction, upper lower and middle
 	// item gets inline styles for speed
 	var speed = 50 + Math.round(Math.random()*5),
-			delay = Math.round(Math.random()*15),
-			bobbingSpeed = 15 + Math.round(Math.random()*5),
+			delay = Math.round(Math.random()*10),
+			bobbingSpeed = 10 + Math.round(Math.random()*5),
 			bobbingDelay = Math.round(Math.random()*10);
-	// item gets inline-styles for easing
+		
+	// if seek is true, it means initial load places item in center
+	if(seek){
+		delay = (-1 * delay) - 10;
+	}
 
+
+	// item gets inline-styles for easing
 	// bob bezier
 	var bx1 = 0,
 			by1 = Math.random()*0.4,
