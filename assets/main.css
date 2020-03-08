@@ -43,7 +43,7 @@ ul, li{
 }
 
 .item_title{
-	font-size: 2rem;
+	font-size: 1.25rem;
 }
 
 
@@ -65,7 +65,7 @@ ul, li{
 }
 
 .item_category{
-	margin-top: 2vw;
+	margin-top: 1rem;
 	color: lightgray;
 }
 
@@ -75,10 +75,18 @@ ul, li{
 }
 
 .categories{
-	width: 30rem;
+	width: 20rem;
 	display: flex;
 	font-size: 1rem;
 	justify-content: space-between;
+}
+
+.item_link:focus{
+	z-index: 10;
+}
+.item_link:focus .text_container{
+	visibility: visible;
+	opacity: 1;
 }
 
 @media(any-hover: hover){
@@ -89,6 +97,5 @@ ul, li{
 	.item:hover .text_container{
 		visibility: visible;
 		opacity: 1;
-		z-index: 
 	}
 }
