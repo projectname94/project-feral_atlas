@@ -160,7 +160,7 @@ Site.itemComponent = (item, index, seek) => {
 				<h1 class="item_title item_text">${item.title}</h1>
 				<div class="categories ${item.category.toLowerCase()}">
 					<span class="item_category invasion">Invasion</span>
-					<span class="item_category capital">Capital</span>
+					<span class="item_category capital active_category">Capital</span>
 					<span class="item_category acceleration">Acceleration</span>
 					<span class="item_category empire">Empire</span>
 				</div>

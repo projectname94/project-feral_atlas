@@ -88,12 +88,16 @@ ul, li{
 	margin-top: 1rem;
 	user-select: none;
 	color: lightgray;
-	text-transform: uppercase;
+	text-transform: lowercase;
 }
 
 .invasion .invasion,
 .capital .capital{
 	color: black;
+}
+
+.active_category{
+	text-transform: uppercase;
 }
 
 .categories{
