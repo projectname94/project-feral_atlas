@@ -61,8 +61,8 @@ ul, li{
 }
 
 .item_title{
-	font-size: 1.25rem;
-	text-transform: uppercase;
+	font-size: 1.75rem;
+	letter-spacing: 0.1em;
 }
 
 
@@ -72,7 +72,8 @@ ul, li{
 
 .text_container{
 	position: absolute;
-	top: calc(100% + 0.25rem);
+	letter-spacing: 0.05em;
+	top: calc(100% + 0.35rem);
 	left: 50%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
