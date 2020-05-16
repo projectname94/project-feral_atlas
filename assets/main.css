@@ -1,10 +1,25 @@
+@font-face{
+	font-family: 'Gridnik';
+	src: url('https://feral-atlas.nyc3.digitaloceanspaces.com/fonts/Foundry%20Gridnik%20W03%20Regular.ttf');
+}
+
 html, body{
 	padding: 0;
 	margin: 0;
 	width: 100%;
 	overflow-x: hidden;
-	font-family: sans-serif;
+	font-family: 'Gridnik', sans-serif;
 	font-weight: 400;
+}
+
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
+	}
 }
 
 #container{
@@ -15,6 +30,9 @@ html, body{
 	height: 100vh;
 	list-style: none;
 	box-sizing: border-box;
+	opacity: 0;
+	animation: fadeIn ease-out 2s 0.5s;
+	animation-fill-mode: forwards;
 }
 
 
@@ -43,7 +61,8 @@ ul, li{
 }
 
 .item_title{
-	font-size: 1.25rem;
+	font-size: 1.75rem;
+	letter-spacing: 0.1em;
 }
 
 
@@ -53,7 +72,8 @@ ul, li{
 
 .text_container{
 	position: absolute;
-	top: calc(100% + 1rem);
+	letter-spacing: 0.05em;
+	top: calc(100% + 0.35rem);
 	left: 50%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
@@ -62,11 +82,14 @@ ul, li{
 	width: auto;
 	white-space: nowrap;
 	text-align: center;
+	pointer-events: none;
 }
 
 .item_category{
 	margin-top: 1rem;
+	user-select: none;
 	color: lightgray;
+	text-transform: lowercase;
 }
 
 .invasion .invasion,
@@ -74,8 +97,12 @@ ul, li{
 	color: black;
 }
 
+.active_category{
+	text-transform: uppercase;
+}
+
 .categories{
-	width: 20rem;
+	width: 25rem;
 	display: flex;
 	font-size: 1rem;
 	justify-content: space-between;

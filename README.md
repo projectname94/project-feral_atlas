@@ -1,14 +1,11 @@
 # project-feral_atlas
 
-
-
-- [x] define order of array
-- [x] select 15
-- [ ] keep track of count
-- [ ] add delays (random)
-- [ ] add duration (random)
-- [ ] callback on complete
-	- remove
-	- add next item
-	- if(last item)
-		- redefine order of array
+- [ ] have a few that appear in the center duration
+- [x] less dense
+- [x] little bit too fast?
+- [x] no chasing 
+- [x] typeface
+- [x] mouse position
+- [x] slower batch
+- [x] less purposeful
+- [x] more bobbin
